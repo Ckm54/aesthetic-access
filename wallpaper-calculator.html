@@ -12,39 +12,92 @@
   <!--Link JS Files-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous">
-  </script>
-  <script src="js/scripts.js"></script>  
+    </script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
   <div class="container">
     <form id="wallPaperCalculator">
-      <div class="row">
-        <h5 class="el-align-justify">Walls</h5>
-        <div class="col-md-4">
-          <label for="wall1Width" class="form-label">Width</label>
-          <input type="number" class="form-control" id="wall1Width" aria-describedby="wall1Width">
-          <div class="form-text">What's the width of wall 1?</div>
+      <div class="wall">
+        <!--Walls-->
+        <div class="row">
+          <h5 class="el-align-justify">Walls</h5>
+          <div class="col-md-4">
+            <label for="wall1Width" class="form-label">Width</label>
+            <input type="number" class="form-control wallWidth" id="wall1Width" aria-describedby="wall1Width">
+            <div class="form-text">What's the width of wall?</div>
+          </div>
+          <div class="col-md-4">
+            <label for="wall1Height" class="form-label">Height</label>
+            <input type="number" class="form-control wallHeight" id="wall1Height" aria-describedby="wall1Height">
+            <div class="form-text">What's the height of the wall?</div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="wall1Height" class="form-label">Height</label>
-          <input type="number" class="form-control" id="wall1Height" aria-describedby="wall1Height">
-          <div class="form-text">What's the height of the window?</div>
+        <button class="addButton btn btn-primary" onclick=showDiv() >Add Another Wall</button>
+         <!--Another Wall-->
+         <div>
+          <div class="row anotherWall">
+            <h5 class="el-align-justify">Another Wall</h5>
+            <div class="col-md-4">
+              <label for="wall1Width" class="form-label">Width</label>
+              <input type="number" class="form-control anotherWallWidth" id="wall1Width" aria-describedby="wall1Width">
+              <div class="form-text">What's the width of wall?</div>
+            </div>
+            <div class="col-md-4">
+              <label for="wall1Height" class="form-label">Height</label>
+              <input type="number" class="form-control anotherWallHeight" id="wall1Height" aria-describedby="wall1Height">
+              <div class="form-text">What's the height of the wall?</div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!--Doors-->
+      <div class="row">
+        <h5 class="el-align-justify">Doors</h5>
+        <div class="col-md-4">
+          <label for="doorWidth" class="form-label">Width</label>
+          <input type="number" class="form-control doorWidth" id="doorWidth" aria-describedby="doorWidth">
+          <div class="form-text">What's the width of the door</div>
+        </div>
+        <div class="col-md-4">
+          <label for="doorHeight" class="form-label">Height</label>
+          <input type="number" class="form-control doorHeight" id="doorHeight" aria-describedby="doorHeight">
+          <div class="form-text">What's the height of the door</div>
+        </div>
+      </div>
+      <!--Windows-->
       <div class="row">
         <h5 class="el-align-justify">Windows</h5>
         <div class="col-md-4">
-          <label for="window1Width" class="form-label">Width</label>
-          <input type="number" class="form-control" id="window1Width" aria-describedby="window1Width">
-          <div class="form-text">What's the width of the window?</div>
+          <label for="windowWidth" class="form-label">Width</label>
+          <input type="number" class="form-control windowWidth" id="windowWidth" aria-describedby="windowWidth">
+          <div class="form-text">What's the width of the window</div>
         </div>
         <div class="col-md-4">
-          <label for="window1Height" class="form-label">Height</label>
-          <input type="number" class="form-control" id="window1Height" aria-describedby="window1Height">
-          <div class="form-text">What's the height of the window?
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <label for="windowHeight" class="form-label">Height</label>
+          <input type="number" class="form-control windowHeight" id="windowHeight" aria-describedby="windowHeight">
+          <div class="form-text">What's the height of the window?</div>
+        </div>
+      </div>
+      <!--Additional Space-->
+      <div class="row">
+        <h5 class="el-align-justify">Additional Space</h5>
+        <div class="col-md-4">
+          <label for="extraSpaceWidth" class="form-label">Width</label>
+          <input type="number" class="form-control extraSpaceWidth" id="extraSpaceWidth"
+            aria-describedby="extraSpaceWidth">
+          <div class="form-text">What's the width of the additional space</div>
+        </div>
+        <div class="col-md-4">
+          <label for="extraSpaceHeight" class="form-label">Height</label>
+          <input type="number" class="form-control extraSpaceHeight" id="extraSpaceHeight"
+            aria-describedby="extraSpaceHeight">
+          <div class="form-text">What's the height of the additional space?</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
   </div>
