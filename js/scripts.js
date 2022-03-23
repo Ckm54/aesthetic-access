@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  $(".anotherWall").hide();
-
-  $(".addButton").click(function () {
-    $(".anotherWall").show();
-  })
-
   $("#wallPaperCalculator").submit(function (event) {
     function calculateArea(width, height) {
       var calculatedArea = width * height;

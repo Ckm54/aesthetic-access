@@ -12,48 +12,85 @@
   <!--Link JS Files-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous">
-    </script>
+  </script>
   <script src="js/scripts.js"></script>
 </head>
 
 <body>
   <div class="container">
     <form id="wallPaperCalculator">
+      <!--WALLS SECTION-->
+      <h5 class="el-align-justify">Walls</h5>
       <div class="wall">
         <!--Walls-->
         <div class="row">
-          <h5 class="el-align-justify">Walls</h5>
+          <!--Wall 1-->
           <div class="col-md-4">
-            <label for="wall1Width" class="form-label">Width</label>
-            <input type="number" class="form-control wallWidth" id="wall1Width" aria-describedby="wall1Width">
-            <div class="form-text">What's the width of wall?</div>
+            <div class="row">
+              <h6 class="text-center">Wall 1</h6>
+              <div class="col-md-6">
+                <input type="number" class="form-control wallWidth" id="wall1Width1" aria-describedby="wall1Width1"
+                  placeholder="Width">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control wallHeight" id="wall1Height1" placeholder="Height"
+                  aria-describedby="wall1Height1">
+              </div>
+            </div>
           </div>
+          <!--End of Wall 1-->
+
+          <!--Wall 2-->
           <div class="col-md-4">
-            <label for="wall1Height" class="form-label">Height</label>
-            <input type="number" class="form-control wallHeight" id="wall1Height" aria-describedby="wall1Height">
-            <div class="form-text">What's the height of the wall?</div>
+            <div class="row">
+              <h6 class="text-center">Wall 2</h6>
+              <div class="col-md-6">
+                <input type="number" class="form-control anotherWallWidth" id="wall1Width2" aria-describedby="wall1Width"
+                  placeholder="Width">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control anotherWallHeight" id="wall1Height2"
+                  aria-describedby="wall1Height" placeholder="Height">
+              </div>
+            </div>
           </div>
+          <!--End of Wall 2-->
         </div>
-        <button class="addButton btn btn-primary" onclick=showDiv() >Add Another Wall</button>
-         <!--Another Wall-->
-         <div>
-          <div class="row anotherWall">
-            <h5 class="el-align-justify">Another Wall</h5>
-            <div class="col-md-4">
-              <label for="wall1Width" class="form-label">Width</label>
-              <input type="number" class="form-control anotherWallWidth" id="wall1Width" aria-describedby="wall1Width">
-              <div class="form-text">What's the width of wall?</div>
-            </div>
-            <div class="col-md-4">
-              <label for="wall1Height" class="form-label">Height</label>
-              <input type="number" class="form-control anotherWallHeight" id="wall1Height" aria-describedby="wall1Height">
-              <div class="form-text">What's the height of the wall?</div>
+        <div class="row">
+          <!--Wall 3-->
+          <div class="col-md-4">
+            <div class="row">
+              <h6 class="text-center">Wall 3</h6>
+              <div class="col-md-6">
+                <input type="number" class="form-control wallWidth" id="wall1Width3" aria-describedby="wall1Width"
+                  placeholder="Width">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control wallHeight" id="wall1Height4" placeholder="Height"
+                  aria-describedby="wall1Height">
+              </div>
             </div>
           </div>
+          <!--End of Wall 3-->
+
+          <!--Wall 4-->
+          <div class="col-md-4">
+            <div class="row">
+              <h6 class="text-center">Wall 4</h6>
+              <div class="col-md-6">
+                <input type="number" class="form-control anotherWallWidth" id="wall1Width" aria-describedby="wall1Width"
+                  placeholder="Width">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control anotherWallHeight" id="wall1Height"
+                  aria-describedby="wall1Height" placeholder="Height">
+              </div>
+            </div>
+          </div>
+          <!--End of Wall 4-->
         </div>
       </div>
-
-      <!--Doors-->
+      <!--DOORS SECTION-->
       <div class="row">
         <h5 class="el-align-justify">Doors</h5>
         <div class="col-md-4">
@@ -67,7 +104,7 @@
           <div class="form-text">What's the height of the door</div>
         </div>
       </div>
-      <!--Windows-->
+      <!--WINDOWS SECTION-->
       <div class="row">
         <h5 class="el-align-justify">Windows</h5>
         <div class="col-md-4">
@@ -81,7 +118,7 @@
           <div class="form-text">What's the height of the window?</div>
         </div>
       </div>
-      <!--Additional Space-->
+      <!--ADDITIONAL SPACE SECTION-->
       <div class="row">
         <h5 class="el-align-justify">Additional Space</h5>
         <div class="col-md-4">
