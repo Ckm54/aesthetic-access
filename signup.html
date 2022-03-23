@@ -8,7 +8,37 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Create an account</h1>
+    <div class="hero">
+        <div class="form-box left">
+
+        </div>
+        <div class="form-box right">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="./fb.png" alt="">
+                <img src="./gp.png" alt="">
+                <img src="./tw.png" alt="">
+            </div>
+            <form id="login" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" name="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="register" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="User Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" name="checkbox" class="checkbox"><span>Agree to terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
