@@ -110,14 +110,14 @@ $(document).ready(function () {
     let unitWallPaperArea = 4;
     var wallPaperRolls = paintWallArea / unitWallPaperArea;
     wallPaperRolls = Math.round(wallPaperRolls);
-    alert(`The total area to be covered by the Wall paper is ${paintWallArea} You will need ${wallPaperRolls} wallpaper rolls`);
+    alert(`The total area to be covered by the Wall paper is ${paintWallArea} square metres. You will need ${wallPaperRolls} wallpaper rolls`);
     console.log("wallPaperRolls:" + wallPaperRolls)
 
     //TODO: Calculate the amount of paint based on the unit litres per area. 
     let unitPaintArea = 8;
     var paintAmount = paintWallArea / unitPaintArea;
     paintAmount = Math.round(paintAmount);
-    alert(`The total area to be painted is ${paintWallArea} You will need ${paintAmount} litres of paint`);
+    alert(`The total area to be painted is ${paintWallArea} square metres. You will need ${paintAmount} litres of paint`);
     console.log("Paint Amount: " + paintAmount);
 
     //TODO: Have an option to add more walls and windows, doors- 
