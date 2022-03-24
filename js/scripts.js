@@ -18,10 +18,10 @@ $(document).ready(function () {
     //! WALL SECTION
     //? Wall 1
     // * Get Wall 1  Width 
-    var wall1Width = $("#wall1Width").val();
+    var wall1Width = parseFloat($("#wall1Width").val());
 
     //* Get Wall 1 Height 
-    var wall1Height = $("#wall1Height").val();
+    var wall1Height = parseFloat($("#wall1Height").val());
 
     //* Create Wall1 Object
     var wall1 = new Partition(wall1Width, wall1Height);
@@ -63,7 +63,7 @@ $(document).ready(function () {
     //* Calculate Total Wall Area
     var totalWallArea = wall1Area + wall2Area + wall3Area + wall4Area;
     console.log("Wall Areas - Total Wall Area: " + totalWallArea, "Wall 1: " + wall1Area, "Wall2: " + wall2Area, " wall3: " + wall3Area, "wall4: " + wall4Area);
-    
+
     //! WINDOW SECTION
     // * Get window Width
     var windowWidth = $(".windowWidth").val();
@@ -74,9 +74,6 @@ $(document).ready(function () {
     var window = new Partition(windowWidth, windowHeight);
 
     var windowArea = window.area(window.width, window.height);
-    console.log("Yeah I called her area");
-    console.log("I am window from the constructor: " + "Width: " + window.width, "Height: " + window.height, "Area:" + windowArea);
-
     //! DOOR SECTION
     // * Get door Width
     var doorWidth = $(".doorWidth").val();
@@ -107,21 +104,31 @@ $(document).ready(function () {
     //TODO: Get the area to be painted/covered with wallpaper i.e area of the walls - grand total area
 
     var paintWallArea = totalWallArea - grandTotalArea;
-    console.log("I am the paintWall area: " + paintWallArea);
+    console.log("PaintWall area: " + paintWallArea);
 
     //TODO: Calculate rolls of wallpaper based on the unit area of the wall paper
+    let unitWallPaperArea = 4;
+    var wallPaperRolls = paintWallArea / unitWallPaperArea;
+    wallPaperRolls = Math.round(wallPaperRolls);
+    alert(`You will need ${wallPaperRolls} wallpaper rolls`);
+    console.log("wallPaperRolls:" + wallPaperRolls)
 
     //TODO: Calculate the amount of paint based on the unit litres per area. 
+    let unitPaintArea = 8;
+    var paintAmount = paintWallArea / unitPaintArea;
+    console.log("Paint Amount: " + paintAmount);
 
-    //TODO: Have an option to add more walls and windows, doors
+    //TODO: Have an option to add more walls and windows, doors- 
+    //TODO:Maybe in future or @Collo can help. I don't have the dedication to do that now. I'm exhausted.
+
 
     //TODO: Calculate the 10% extra 
+    var tenExtraWallPaper = 1.1 * wallPaperRolls;
 
+    var tenExtraPaint = 1.1 * paintAmount;
     //TODO: Checkout logic and form 
 
-    //TODO: Remove button
-
-    //TODO: 
+    
 
 
 
