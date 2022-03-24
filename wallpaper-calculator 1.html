@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Paper Calculator</title>
+  <!--Link CSS Files-->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!--Link JS Files-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+  </script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form id="wallPaperCalculator">
+      <!--WALLS SECTION-->
+      <h5 class="el-align-justify">Walls</h5>
+      <div class="wall">
+        <!--Walls-->
+        <div class="row">
+          <!--Wall 1-->
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <h6> Wall 1</h6>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control wallWidth" id="wall1Width" aria-describedby="wall1Width1"
+                  placeholder="Width in metres">
+              </div>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control wallHeight" id="wall1Height" placeholder="Height in metres"
+                  aria-describedby="wall1Height1">
+              </div>
+            </div>
+          </div>
+          <!--End of Wall 1-->
+
+          <!--Wall 2-->
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <h6> Wall 2</h6>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control anotherWallWidth" id="wall2Width" aria-describedby="wall2Width"
+                  placeholder="Width in metres">
+              </div>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control anotherWallHeight" id="wall2Height"
+                  aria-describedby="wall2Height" placeholder="Height in metres">
+              </div>
+            </div>
+          </div>
+          <!--End of Wall 2-->
+        </div>
+        <div class="row">
+          <!--Wall 3-->
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <h6> Wall 3</h6>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control wallWidth" id="wall3Width" aria-describedby="wall3Width"
+                  placeholder="Width in metres">
+              </div>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control wallHeight" id="wall3Height" placeholder="Height in metres"
+                  aria-describedby="wall3Height">
+              </div>
+            </div>
+          </div>
+          <!--End of Wall 3-->
+
+          <!--Wall 4-->
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <h6> Wall 4</h6>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control anotherWallWidth" id="wall4Width" aria-describedby="wall4Width"
+                  placeholder="Width in metres">
+              </div>
+              <div class="col-md-6">
+                <input type="number" step="any" min="0" class="form-control anotherWallHeight" id="wall4Height"
+                  aria-describedby="wall4Height" placeholder="Height in metres">
+              </div>
+            </div>
+          </div>
+          <!--End of Wall 4-->
+        </div>
+      </div>
+      <!--DOORS SECTION-->
+      <div class="row">
+        <h5 class="el-align-justify">Doors</h5>
+        <div class="col-md-6">
+          <label for="doorWidth" class="form-label">Width</label>
+          <input type="number" step="any" min="0" class="form-control doorWidth" id="doorWidth" aria-describedby="doorWidth">
+          <div class="form-text">What's the width of the door</div>
+        </div>
+        <div class="col-md-6">
+          <label for="doorHeight" class="form-label">Height</label>
+          <input type="number" step="any" min="0" class="form-control doorHeight" id="doorHeight" aria-describedby="doorHeight">
+          <div class="form-text">What's the height of the door</div>
+        </div>
+      </div>
+      <!--WINDOWS SECTION-->
+      <div class="row">
+        <h5 class="el-align-justify">Windows</h5>
+        <div class="col-md-6">
+          <label for="windowWidth" class="form-label">Width</label>
+          <input type="number" step="any" min="0" class="form-control windowWidth" id="windowWidth" aria-describedby="windowWidth">
+          <div class="form-text">What's the width of the window</div>
+        </div>
+        <div class="col-md-6">
+          <label for="windowHeight" class="form-label">Height</label>
+          <input type="number" step="any" min="0" class="form-control windowHeight" id="windowHeight" aria-describedby="windowHeight">
+          <div class="form-text">What's the height of the window?</div>
+        </div>
+      </div>
+      <!--ADDITIONAL SPACE SECTION-->
+      <div class="row">
+        <h5 class="el-align-justify">Additional Space</h5>
+        <div class="col-md-6">
+          <label for="extraSpaceWidth" class="form-label">Width</label>
+          <input type="number" step="any" min="0" class="form-control extraSpaceWidth" id="extraSpaceWidth"
+            aria-describedby="extraSpaceWidth">
+          <div class="form-text">What's the width of the additional space</div>
+        </div>
+        <div class="col-md-6">
+          <label for="extraSpaceHeight" class="form-label">Height</label>
+          <input type="number" step="any" min="0" class="form-control extraSpaceHeight" id="extraSpaceHeight"
+            aria-describedby="extraSpaceHeight">
+          <div class="form-text">What's the height of the additional space?</div>
+        </div>
+      </div>
+      <div class="mybtn">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
