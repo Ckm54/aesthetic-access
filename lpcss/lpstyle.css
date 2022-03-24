@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Leckerli+One&display=swap');
 *{
   margin: 0;
   padding:0 ;
@@ -13,12 +15,23 @@ html
 .navbar{
   position: fixed;
   display: flex;
-  flex-direction: column;
-  background-color:rgb(229,229,229);
-  left:0; right: 0;
+  background-color:rgb(229,229,229, 0.8);
+  padding: 10px 60px;
+  width: 100vw;
   text-decoration: none;
-  font:ubuntu;
+  font-family: "ubuntu", sans-serif;
 
+}
+.logo a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Leckerli one', cursive;
+}
+.logo a:hover {
+  color: #087697;
 }
 
 .navbar ul{
@@ -62,6 +75,7 @@ html
     background-size: cover;
     height: 80vh;
     font-size: 30px;
+    margin-top: -25px;
     
   }
 
@@ -214,7 +228,7 @@ text-align: center;
   display:flex;
   align-items: center; 
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   
 }
 
