@@ -1,3 +1,18 @@
-body{
-  background-color: red;
+.about-section1{
+  background-image:url('images/mural.jpg');
+  background-size: cover;
+  padding: 100px;
+}
+
+section{
+  padding: 30px;
+}
+
+.paint-img{
+  height: 70%;
+  width: 80%;
+}
+
+.info-div{
+padding: 30px;
 }
