@@ -116,6 +116,8 @@ $(document).ready(function () {
     //TODO: Calculate the amount of paint based on the unit litres per area. 
     let unitPaintArea = 8;
     var paintAmount = paintWallArea / unitPaintArea;
+    paintAmount = Math.round(paintAmount);
+    alert(`The total area to be painted is ${paintWallArea} You will need ${paintAmount} litres of paint`);
     console.log("Paint Amount: " + paintAmount);
 
     //TODO: Have an option to add more walls and windows, doors- 
