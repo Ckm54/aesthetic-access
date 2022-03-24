@@ -14,10 +14,9 @@ section {
   --Patua: "Patua One", cursive;
   --Lobster: "lobster", cursive;
   --light-black: #2e2c2caf;
-  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --bggradient: linear-gradient(to bottom, #1f516c, #5d9eba);
   --light-gray: rgba(255, 255, 255, 0.877);
 }
-
 header a {
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
