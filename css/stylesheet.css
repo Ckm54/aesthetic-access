@@ -1,0 +1,45 @@
+.about-section1{
+  background-image:url('images/mural.jpg');
+  background-size: cover;
+  padding: 100px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.about-h1{
+  font-size: 4.3rem;
+}
+
+h2{
+  font-size: 3rem;
+  color: #557B83;
+  padding-bottom: 20px;
+}
+
+button{
+  margin-top: 30px;
+}
+
+section{
+  padding: 10px;
+}
+
+.paint-img{
+  height: 60%;
+  width: 80%;
+}
+
+.info-div{
+padding: 30px;
+}
+
+.profile-status{
+  width: 300px;
+  padding: 20px 0 ;
+  background-color: #557B83;
+}
+
+.profile-status2{
+  width: 300px;
+  padding: 20px 0 ;
+  background-color: #EEEEEE;
+}
