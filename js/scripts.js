@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#wallPaperCalculator").submit(function (event) {
     function calculateArea(width, height) {
       var calculatedArea = width * height;
-      console.log(`I have been called at the function level. The Area is: ${calculatedArea}`);
+
       return calculatedArea;
     }
     //* Create Partition Class
@@ -16,30 +16,54 @@ $(document).ready(function () {
     Partition.prototype.area = calculateArea;
 
     //! WALL SECTION
-    // * Get Wall Width
-    var wallWidth = $(".wallWidth").val();
+    //? Wall 1
+    // * Get Wall 1  Width 
+    var wall1Width = $("#wall1Width").val();
 
-    console.log("I am total wall width called outside the function: " + wallWidth)
-    //* Get Wall Height
-    var wallHeight = $(".wallHeight").val();
+    //* Get Wall 1 Height 
+    var wall1Height = $("#wall1Height").val();
 
-    //* Create Wall Object
-    var wall = new Partition(wallWidth, wallHeight);
-    var wallArea = wall.area(wall.width, wall.height);
-    //TODO: create another wall object
+    //* Create Wall1 Object
+    var wall1 = new Partition(wall1Width, wall1Height);
+    var wall1Area = wall1.area(wall1.width, wall1.height);
+
+    //? Wall 2
+    // * Get Wall 2  Width 
+    var wall2Width = $("#wall2Width").val();
+
+    //* Get Wall 1 Height 
+    var wall2Height = $("#wall2Height").val();
+
+    //* Create wall2 Object
+    var wall2 = new Partition(wall2Width, wall2Height);
+    var wall2Area = wall2.area(wall2.width, wall2.height);
+
+    //? Wall 3
+    // * Get Wall 3  Width 
+    var wall3Width = $("#wall3Width").val();
+
+    //* Get Wall 1 Height 
+    var wall3Height = $("#wall3Height").val();
+
+    //* Create wall3 Object
+    var wall3 = new Partition(wall3Width, wall3Height);
+    var wall3Area = wall3.area(wall3.width, wall3.height);
+
+    //? Wall 4
+    // * Get Wall 4  Width 
+    var wall4Width = $("#wall4Width").val();
+
+    //* Get Wall 1 Height 
+    var wall4Height = $("#wall4Height").val();
+
+    //* Create wall4 Object
+    var wall4 = new Partition(wall4Width, wall4Height);
+    var wall4Area = wall4.area(wall4.width, wall4.height);
+
+    //* Calculate Total Wall Area
+    var totalWallArea = wall1Area + wall2Area + wall3Area + wall4Area;
+    console.log("Wall Areas - Total Wall Area: " + totalWallArea, "Wall 1: " + wall1Area, "Wall2: " + wall2Area, " wall3: " + wall3Area, "wall4: " + wall4Area);
     
-    var anotherWallWidth = $(".anotherWallWidth").val();
-
-    var anotherWallHeight = $(".anotherWallHeight").val();
-
-    var newWall = new Partition(anotherWallWidth, anotherWallHeight);
-
-    console.log("I am the new wall inside addbutton function width:" + newWall.width,  "height: " + newWall.height);
-    var anotherWallArea = newWall.area(newWall.width, newWall.height);
-    console.log("Another wall area: " + anotherWallArea);
-
-    //  console.log("Yeah I called her area");
-    // console.log("I am wall from the constructor: " + "Width: " + wall.width, "Height: " + wall.height, "Area:" + wallArea);
     //! WINDOW SECTION
     // * Get window Width
     var windowWidth = $(".windowWidth").val();
@@ -63,8 +87,6 @@ $(document).ready(function () {
     var door = new Partition(doorWidth, doorHeight);
 
     var doorArea = door.area(door.width, door.height);
-    // console.log("Yeah I called her area");
-    // console.log("I am door from the constructor: " + "Width: " + door.width, "Height: " + door.height, "Area:" + doorArea);
 
     //! EXTRA SPACE
     // * Get extraSpace Width
@@ -76,8 +98,6 @@ $(document).ready(function () {
     var extraSpace = new Partition(extraSpaceWidth, extraSpaceHeight);
 
     var extraSpaceArea = extraSpace.area(extraSpace.width, extraSpace.height);
-    // console.log("Yeah I called her area");
-    // console.log("I am extraSpace from the constructor: " + "Width: " + extraSpace.width, "Height: " + extraSpace.height, "Area:" + extraSpaceArea);
 
     //TODO: Calculate the grand total area to be substracted i.e doors, windows and the extra space
 
@@ -86,7 +106,7 @@ $(document).ready(function () {
 
     //TODO: Get the area to be painted/covered with wallpaper i.e area of the walls - grand total area
 
-    var paintWallArea = wallArea - grandTotalArea;
+    var paintWallArea = totalWallArea - grandTotalArea;
     console.log("I am the paintWall area: " + paintWallArea);
 
     //TODO: Calculate rolls of wallpaper based on the unit area of the wall paper
