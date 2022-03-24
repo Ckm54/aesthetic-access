@@ -2,6 +2,16 @@
   background-image:url('images/mural.jpg');
   background-size: cover;
   padding: 100px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.about-h1{
+  font-size: 4.3rem;
+}
+
+h2{
+  font-size: 3rem;
+  color: #557B83;
 }
 
 section{
@@ -15,4 +25,16 @@ section{
 
 .info-div{
 padding: 30px;
+}
+
+.profile-status{
+  width: 300px;
+  padding: 20px 0 ;
+  background-color: #557B83;
+}
+
+.profile-status2{
+  width: 300px;
+  padding: 20px 0 ;
+  background-color: #EEEEEE;
 }
