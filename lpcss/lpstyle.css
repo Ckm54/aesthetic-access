@@ -55,7 +55,7 @@ html
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image:url(/lpimages/assets/wall1.jpg);
+    background-image:url(../lpassets/wall1.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
