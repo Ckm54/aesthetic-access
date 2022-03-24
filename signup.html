@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box left">
+            <div class="info">
+                <h2>Aesthetic Access</h2>
+                <div class="contact-info">
+                    <p>box 300 - 00100,</p>
+                    <p>Nairobi,</p>
+                    <p>Kenya</p>
+                </div>
+                <div class="icons">
+                    <div class="contact">
+                        <i class="fas fa-phone"></i>
+                        <p>Tel: 00000000</p>
+                    </div>
+                    <div class="contact">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: support@aestheticaccess.com</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <a href="./index.html">Back to home</a>
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-box right">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <div class="social-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <form id="login" action="" class="input-group">
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+                <input type="checkbox" name="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="register" action="" class="input-group">
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="User Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+                <input type="checkbox" name="checkbox" class="checkbox"><span>Agree to terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>

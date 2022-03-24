@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap');
+*{
+  margin: 0;
+  padding:0 ;
+  font-family: 'Ubuntu';
+
+}
+html
+
+/*Header Section*/
+
+.navbar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(229,229,229);
+  left:0; right: 0;
+  text-decoration: none;
+  font:ubuntu;
+
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 0px 0px;
+  align-items: center;
+  
+
+  }
+  /* .navbar ul li */
+  
+  .navbar ul li a{
+    color:rgb(93, 158, 186);
+    color:rgb(93, 158, 186);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+  
+  .navbar ul li a:hover{
+    background-color:rgb(31, 81, 108);
+    color:rgb(93, 158, 186);
+    color:white;
+    border-radius: 10%;
+    
+ 
+  }
+
+   /*Home Section*/
+  
+   #home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(../lpassets/wall1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    font-size: 30px;
+    
+  }
+
+  #home h1{
+    color: white;
+    padding-left: 5%;
+    font:Spartan;
+  
+
+  } 
+
+  
+  #home p{
+
+    padding-left: 5%;
+    
+  }
+
+   .paintpreview{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+   
+  }
+ 
+ .paintpreview h2{
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(28,69,63);
+ }
+
+ #paintpreview h{
+  font-weight: bold;
+}
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box1{
+    color:rgb(197, 166, 89)  ;
+    font:Spartan; 
+    
+  }
+
+  .box2 , .box5{
+    background-color:rgb(197, 166, 89) ;
+    font:Spartan;
+    
+  }
+
+  .box1 p{
+    text-align: left;
+  } 
+
+  .box2 p, .box5 p{
+    text-align: center;
+  }
+
+  #paintpreview .button1, #paintpreview .button2{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgb(197, 166, 89)  ;
+    border: rgb(93, 158, 186) 1px solid;
+    background-color: #fff;
+    color: rgb(93, 158, 186);
+    padding: 0px 0px;
+    border-radius: 10px;
+ 
+  }
+  
+  #paintpreview .button1:hover, #paintpreview .button2:hover {
+    background:rgb(31, 81, 108);
+    color:rgb(197, 166, 89)  ;
+  } 
+
+  /* testimonials section */
+
+.testimonials h3 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(28,69,63);
+
+}
+
+
+
+.testimonials-container {
+  align-items: center;
+  text-align: center; 
+}
+
+.hidden-content1{
+  display: none;
+  font-size: 25px;
+ 
+}
+.hidden-content2{
+  display: none;
+  font-size: 25px;
+
+}
+.hidden-content3{
+  display: none;
+  font-size: 25px;
+  
+}
+
+.hidden-content1 h, .hidden-content2 h, .hidden-content3 h{
+font-weight: bold;
+text-align: center;
+
+}
+
+.content1, .content2,.content3{
+  text-align: center;
+}
+
+.testimonials-container{
+  display: flex;
+  
+}
+
+ .checked {
+   color: orange;
+}
+
+/* footer section */
+
+.footer{
+
+  background: rgb(93, 158, 186);
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  
+}
+
+.footer h4{
+  font-size: 30px;
+  Padding:10px 0;
+}
+
+.footer .box-container{
+  display:flex;
+  align-items: center; 
+  text-align: center;
+  justify-content: center;
+  
+}
+
+
+
+.box, .links, .socials{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+  color: white;
+  margin: 10px;
+ 
+}
+
+.links{
+  margin: 1px;
+}
+
+.links a:hover{
+  color:rgb(31, 81, 108) ;
+}
+
+
+
