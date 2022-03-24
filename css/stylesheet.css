@@ -1,22 +1,42 @@
 .about-section1{
-  background-image:url('images/mural.jpg');
+  background-image: linear-gradient(rgba(10, 79, 119, 0.4), rgba(1, 59, 66, 0.4)), url('./images/wall5.jpg');
   background-size: cover;
-  padding: 100px;
+  height: 80vh;
   color: #fff;
   font-size: 1.4rem;
 }
+.container.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
 .about-h1{
   font-size: 4.3rem;
+}
+.nav {
+  margin-right: 30px;
+}
+.nav li a {
+  color: #000;
 }
 
 h2{
   font-size: 3rem;
   color: #557B83;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
+.text-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
 button{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 section{
@@ -24,8 +44,9 @@ section{
 }
 
 .paint-img{
-  height: 60%;
-  width: 80%;
+  height:420px;
+  width: 600px;
+  object-fit: cover;
 }
 
 .info-div{
@@ -42,4 +63,30 @@ padding: 30px;
   width: 300px;
   padding: 20px 0 ;
   background-color: #EEEEEE;
+}
+.icon {
+  width: 100px;
+}
+footer {
+  background-color: #3B4546;
+  color: #E3D4B6;
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 20px 0;
+}
+.footer-info h5 {
+  color: #fff;
+}
+.footer-info .links ul {
+  list-style-type: none;
+}
+.footer-info .links ul li a {
+  color: #E3D4B6;
+}
+.footer-info .links ul li a:hover {
+  color: #fff;
 }
