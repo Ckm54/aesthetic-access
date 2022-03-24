@@ -110,7 +110,7 @@ $(document).ready(function () {
     let unitWallPaperArea = 4;
     var wallPaperRolls = paintWallArea / unitWallPaperArea;
     wallPaperRolls = Math.round(wallPaperRolls);
-    alert(`You will need ${wallPaperRolls} wallpaper rolls`);
+    alert(`The total area to be covered by the Wall paper is ${paintWallArea} You will need ${wallPaperRolls} wallpaper rolls`);
     console.log("wallPaperRolls:" + wallPaperRolls)
 
     //TODO: Calculate the amount of paint based on the unit litres per area. 
@@ -123,43 +123,18 @@ $(document).ready(function () {
 
 
     //TODO: Calculate the 10% extra 
-    var tenExtraWallPaper = 1.1 * wallPaperRolls;
+    var tenPercentExtraWallPaper = 1.1 * wallPaperRolls;
 
-    var tenExtraPaint = 1.1 * paintAmount;
+    var tenPercentExtraPaint = 1.1 * paintAmount;
     //TODO: Checkout logic and form 
 
-    
-
-
-
-
-    //* this.reset();
+    this.reset();
     event.preventDefault();
   })
 })
 
-//Get height and width of wall 1. If time allows, have a function to select the units, but currently in metres.
-// Have a button to add more walls
-//Calculate area of each wall.
-//Get total area of walls
-//Input the height and width for the other wall
-//Get the height and width of window 1
-// Have a button to add more windows
-//Calculate area of each window
-//Get the total area of windows
-//Get height and width of door
-//Have a button to add other doors
-//Calculate area of  each door.
-//Get total area of windows
-//Check if there are any additional spaces to be excluded
-//Get height and width of the additional spaces
-//Calculate area of the additional spaces
-// ? What if the additional space is not rectangular?
-//Get total area of additional spaces
-//Include 10% wastage
-//Calculate total full coverage area  i.e walls + 10 % wastage
-//Calculate total area to be excluded i.e windows, doors, additional spaces
-//Calculate area to be covered by wallpaper i.e full coverage area - wallpaper area
-//Calculate wallpaper area
-//Calculate number of wallpaper rolls i.e total area/wallpaper area
-//Display area and number of wallpaper rolls
+
+
+
+
+
