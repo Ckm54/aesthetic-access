@@ -86,6 +86,11 @@ padding: 30px;
   object-fit: cover;
   border-radius: 50%;
 }
+.icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   background-color: #3B4546;
   color: #E3D4B6;
