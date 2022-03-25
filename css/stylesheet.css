@@ -80,7 +80,11 @@ padding: 30px;
   background-color: #EEEEEE;
 }
 .icon {
-  width: 100px;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 footer {
   background-color: #3B4546;
