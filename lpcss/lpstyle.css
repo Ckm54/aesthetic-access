@@ -96,15 +96,15 @@ html
 
    .paintpreview{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 10px;
    
   }
  
  .paintpreview h2{
   text-align: center;
-  font-size: 40px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 20px;
   color: rgb(28,69,63);
  }
 
@@ -124,8 +124,8 @@ html
 
   .box2 , .box5{
     background-color:rgb(197, 166, 89) ;
-    font:Spartan;
-    
+    font-family:'Ubuntu', sans-serif;
+    padding: 30px 20px;
   }
 
   .box1 p{
